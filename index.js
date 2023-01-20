@@ -5,6 +5,9 @@ import conectarDB from "./config/db.js";
 import usuarioRoutes from "./routes/usuarioRoutes.js";
 import proyectoRoutes from "./routes/proyectoRoutes.js";
 import tareaRoutes from "./routes/tareaRoutes.js";
+import mongoose from "mongoose";
+
+mongoose.set('strictQuery',true)
 
 const app = express();
 app.use(express.json());
@@ -12,6 +15,7 @@ app.use(express.json());
 dotenv.config();
 
 conectarDB();
+
 
 // Configurar CORS
 const whitelist = [process.env.FRONTEND_URL];
