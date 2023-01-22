@@ -12,7 +12,7 @@
     "MERN",
     "Node"
   ],
-  "author": "Juan De la torre",
+  "author": "Harold Leyton",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
